@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
+        width: "100%",
     },
     homeContainer: {
         flex: 2,
@@ -25,6 +26,26 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         alignSelf: 'center',
     },
+    scrollContainer: {
+        flex: 1,
+        marginTop: 20,
+        width: "100%",
+        height: "100%",
+    },
+    heading: {
+        color: "green",
+        fontSize: 30,
+        textAlign: "center",
+        fontWeight: "bold",
+    },
+    imageContainer: {
+        flex: 1,
+        margin: 1,
+        aspectRatio: 1,
+        borderRadius: 8,
+        overflow: "hidden",
+    },
+    image: {},
 });
 
 export default styles

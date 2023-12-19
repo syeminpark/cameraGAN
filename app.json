@@ -15,8 +15,17 @@
       [
         "expo-image-picker",
         {
-          "photosPermission": "The app accesses your photos to let you share them with your friends.",
-          "cameraPermission": "The app accesses your camera to let you share them with your friends."
+          "photosPermission": "The app accesses your photos.",
+          "cameraPermission": "The app accesses your camera.",
+          "savePhotosPermission": "Allow app to save photos."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow app to access your photos.",
+          "savePhotosPermission": "Allow app to save photos.",
+          "isAccessMediaLocationEnabled": true
         }
       ]
     ],
