@@ -28,9 +28,10 @@ const styles = StyleSheet.create({
     },
     scrollContainer: {
         flex: 1,
-        marginTop: 20,
+        marginTop: 50,
         width: "100%",
         height: "100%",
+        pointerEvents: 'box-none',
     },
     heading: {
         color: "green",

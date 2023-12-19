@@ -2,17 +2,14 @@ import React from 'react';
 import { Image } from "expo-image";
 import styles from './Styles';
 import { Button, FlatList, Modal, Pressable, Text, View, } from 'react-native'
+import { FontAwesome, Ionicons, } from '@expo/vector-icons'
 
-const GalleryView = ({ albumName, renderItem, fetchMedia, setCurrentGalleryImage, currentGalleryImage, galleryImages, setGalleryImages, setStartGallery }) => (
+const GalleryView = ({ albumName, renderItem, fetchMedia, setCurrentGalleryImage, currentGalleryImage, galleryImages, setGalleryImages, setStartGallery, home }) => (
     <View style={styles.container}>
 
-        <View style={{ flexDirection: "row", justifyContent: "space-around", width: "100%", padding: 10 }}>
-            {/* <Button
-                title="Images"
-                onPress={() => {
-                    fetchMedia(0, "image");
-                }}
-            /> */}
+        <View style={{ position: 'absolute', top: 30, left: 10, flexDirection: 'row', flex: 1, padding: 0, justifyContent: "space-between", width: "100%" }}>
+            <Ionicons style={{ color: "black", fontSize: 60, backgroundColor: 'transparent' }} onPress={home} name="close-outline" />
+
         </View>
         {/* view full image in modal */}
         <Modal visible={currentGalleryImage !== ""} transparent={false}>

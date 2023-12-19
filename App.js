@@ -36,6 +36,8 @@ const App = () => {
     setStartCamera(false)
     setCapturedImage(null)
     setPreviewVisible(false)
+    setStartGallery(false)
+    console.log('hom')
   }
 
   return (
@@ -61,6 +63,7 @@ const App = () => {
           galleryImages={galleryImages}
           setGalleryImages={setGalleryImages}
           setStartGallery={setStartGallery}
+          home={__home}
         />
       ) : (
         <HomeView addPhotoToAlbum={__addPhotoToAlbum}
